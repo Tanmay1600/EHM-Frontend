@@ -1,0 +1,345 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff9e7;
+  color: #111;
+}
+
+.about-container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Top Section - Matches Contact Page */
+.about-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 100px;
+  background-color: #f4a261;
+  flex-wrap: wrap;
+  gap: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-top .left {
+  max-width: 100%;
+}
+
+.about-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.about-heading .line1111 {
+  width: 50px;
+  height: 2px;
+  background-color: #222;
+}
+
+.about-heading .subheading {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #222;
+}
+
+.about-top h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  color: #111;
+}
+
+.about-top p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Additional sections like mission, team, etc., can go below this and follow the same styling */
+
+.section {
+  padding: 60px 100px;
+  background-color: #f7e7b8;
+}
+
+.section h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.section p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .about-top {
+    flex-direction: column;
+    padding: 50px 30px;
+  }
+
+  .section {
+    padding: 40px 30px;
+  }
+
+  .about-top h1 {
+    font-size: 32px;
+  }
+
+  .section h2 {
+    font-size: 24px;
+  }
+}
+/* === Main Image === */
+.main-image {
+  width: 100%;
+  padding: 0 5%;
+  margin-top: 2rem;
+}
+
+.main-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* === Mission and Vision Section === */
+.mission-vision-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 5%;
+  background-color: #f7e7b8;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.mission-box, .vision-box {
+  flex: 1;
+  min-width: 280px;
+}
+
+.mission-box h3, .vision-box h3 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #444;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.mission-box h4, .vision-box h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.mission-box p, .vision-box p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* === Team Section === */
+.team-section {
+  background-color: #f4a261;
+  padding: 5rem 5%;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 2rem;
+  color: #222;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.team-description {
+  max-width: 750px;
+  margin: 0 auto 3rem;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.team-member {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 260px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+.team-member img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.team-member h4 {
+  margin: 0.8rem 0 0.3rem;
+  font-size: 1.2rem;
+  color: #222;
+  font-weight: 600;
+}
+
+.team-member h6 {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #0e0a08;
+  color: white;
+  padding: 60px 100px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-brand h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: 60px; /* reduced from 100px to 60px */
+}
+
+.footer-column h3 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #d3d3d3;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover {
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+/* === Responsive Adjustments === */
+@media (max-width: 992px) {
+  .mission-vision-container {
+    flex-direction: column;
+  }
+
+  .team-member {
+    width: 220px;
+  }
+
+  .main-image {
+    margin-top: 1rem;
+    background-color: #f7e7b8;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero-content {
+    padding-left: 1rem;
+  }
+
+  .about-hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .team-member {
+    width: 180px;
+  }
+
+  .team-member img {
+    height: 200px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-hero-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .mission-box h4, .vision-box h4 {
+    font-size: 1.1rem;
+  }
+
+  .team-members {
+    gap: 1rem;
+  }
+}
+.footer-copyright {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  color: #ccc;
+  background-color: #000; /* Keep same as footer */
+  border-top: 1px solid #333;
+}
